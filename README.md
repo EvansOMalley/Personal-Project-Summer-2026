@@ -1,0 +1,1 @@
+## Context of the Project  - Recreational Project For Resumè Building- Dataset from Pew Research    ## Goals of the project  - Focus on efficient and effective use of library functions- Focus on making legible work for potential presentation- Focus on building a robust resource library for the notebook
