@@ -1,0 +1,1639 @@
+Country:Categorical{
+1 AUT
+2 BEG
+3 DNK
+4 FIN
+5 FRA
+6 DEU
+7 IRL
+8 ITA
+9 NLD
+10 NOR
+11 PRT
+12 SLO
+13 ESP
+14 SWE
+15 CHE
+16 GBR
+}
+Weight:Cardinal{
+}
+Q1:Categorical{
+1 Satisfied
+2 Dissatisfied
+}
+Q2:Ordinal{
+1 Very good
+2 Somewhat good
+3 Somewhat bad
+4 Very bad
+}
+Q4_:Categorical{
+1 Yes
+2 No
+}
+Q5:Ordinal{
+1 Strongly favor
+2 Favor
+3 Oppose
+4 Strongly oppose
+}
+Q6:Ordinal{
+1 Legal in all cases
+2 Legal in most cases
+3 Illegal in most cases
+4 Illegal in all cases
+}
+Q7:Categorical{
+1 Religion should be kept separate from government policies
+2 Government policies should support religious values and beliefs
+}
+Q8:Categorical{
+1 The teachings of some realigions promote violence
+2 Some violent people use religion to justify their actions
+}
+Q9:Categorical{
+1 Christianity
+2 Islam
+3 Judaism
+4 Hinduism
+5 Buddhism
+6 Other religions
+7 All religions
+8 Atheism
+}
+Q10_:Ordinal{
+1 A great deal
+2 Some
+3 Not very much
+4 Nothing at all
+}
+Q11:Categorical{
+1 Islam is fundamentally incompatible
+2 There is no fundamental contradiction
+}
+Q13:Categorical{
+1 Yes
+2 No
+3 Does not pay taxes
+}
+Q14_a:Categorical{
+1 Very likely
+2 Somewhat likely
+3 Not too likely
+4 Not at all likely
+}
+Q14_b:Categorical{
+1 Yes
+2 No
+}
+QCurrel:Categorical{
+1 Christian
+2 Muslim
+3 Jewish
+4 Buddhist
+6 Hindu
+9 Atheist
+10 Agnostic
+91 Something else
+92 Nothing in particular
+}
+QCurreld:Categorical{
+1 Christian
+2 Muslim
+3 Neither
+}
+QDenom[COUNTRY]:Categorical{
+91 Something else
+92 No particular denomination
+93 Protestant
+94 Just Christian
+!AUT{
+1 Orthodox
+2 Catholic
+8 Lutheran
+}
+BEG{
+2 Catholic
+}
+DNK{
+2 Catholic
+8 Lutheran
+}
+FIN{
+1 Orthodox
+3 Pentecostal
+8 Lutheran
+}
+FRA{
+1 Orthodox
+2 Catholic
+3 Pentecostal
+}
+DEU{
+1 Orthodox
+2 Catholic
+8 Lutheran
+}
+IRL{
+2 Catholic
+13 Anglican
+}
+ITA{
+2 Catholic
+3 Pentecostal
+4 Jehovah's Witness
+}
+NLD{
+2 Catholic
+3 Pentecostal
+10 Presbyterian
+}
+NOR{
+2 Catholic
+3 Pentecostal
+8 Lutheran
+}
+PRT{
+2 Catholic
+3 Pentecostal
+4 Jehovah's Witness
+14 Non-traditional
+}
+SLO{
+1 Orthodox
+2 Catholic
+8 Lutheran
+10 Presbyterian
+}
+ESP{
+2 Catholic
+}
+SWE{
+1 Orthodox
+2 Catholic
+3 Pentecostal
+8 Lutheran
+15 Congregationalist
+}
+CHE{
+1 Orthodox
+2 Catholic
+3 Pentecostal
+4 Jehovah's Witness
+10 Presbyterian
+}
+GBR{
+1 Orthodox
+2 Catholic
+3 Pentecostal
+4 Jehovah's Witness
+10 Presbyterian
+11 Methodist
+13 Anglican
+16 Fundamentalist
+}
+}
+Q15_:Ordinal{
+1 More than once a week
+2 Once a week
+3 Once or twice a month
+4 A few times a year
+5 Seldom
+6 Never
+}
+Q16:Ordinal{
+1 Very important
+2 Somewhat important
+3 Not too important
+4 Not at all important
+}
+Q17:Categorical{
+1 Yes
+2 No
+}
+Q19_:Categorical{
+1 Yes
+2 No
+}
+Q20_:Ordinal{
+1 Completely agree
+2 Mostly agree
+3 Most disagree
+4 Completely disagree
+}
+QChrel:Categorical{
+1 Christian
+2 Muslim
+3 Jew
+4 Buddhist
+6 Hindu
+9 Atheist
+10 Agnostic
+91 Something else
+92 Nothing in particlar
+}
+QChdenom[COUNTRY]:Categorical{
+91 Something else
+92 No particular denomination
+93 Protestant
+94 Just Christian
+!AUT{
+1 Orthodox
+2 Catholic
+8 Lutheran
+}
+BEG{
+2 Catholic
+}
+DNK{
+2 Catholic
+8 Lutheran
+}
+FIN{
+1 Orthodox
+3 Pentecostal
+8 Lutheran
+}
+FRA{
+1 Orthodox
+2 Catholic
+3 Pentecostal
+}
+DEU{
+1 Orthodox
+2 Catholic
+8 Lutheran
+}
+IRL{
+2 Catholic
+13 Anglican
+}
+ITA{
+2 Catholic
+3 Pentecostal
+4 Jehovah's Witness
+}
+NLD{
+2 Catholic
+3 Pentecostal
+10 Presbyterian
+}
+NOR{
+2 Catholic
+3 Pentecostal
+8 Lutheran
+}
+PRT{
+2 Catholic
+3 Pentecostal
+4 Jehovah's Witness
+14 Non-traditional
+}
+SLO{
+1 Orthodox
+2 Catholic
+8 Lutheran
+10 Presbyterian
+}
+ESP{
+2 Catholic
+}
+SWE{
+1 Orthodox
+2 Catholic
+3 Pentecostal
+8 Lutheran
+15 Congregationalist
+}
+CHE{
+1 Orthodox
+2 Catholic
+3 Pentecostal
+4 Jehovah's Witness
+10 Presbyterian
+}
+GBR{
+1 Orthodox
+2 Catholic
+3 Pentecostal
+4 Jehovah's Witness
+10 Presbyterian
+11 Methodist
+13 Anglican
+16 Fundamentalist
+}
+}
+Q21_:Categorical{
+1 Yes
+2 No
+}
+Q22_:Categorical{
+1 Agree
+2 Disagree
+3 Exception
+}
+Q23:Categorical{
+1 Yes
+2 No
+}
+Q24:Ordinal{
+1 Absolutely certain
+2 Fairly certain
+3 Not too certain
+4 Not at all certain
+}
+Q25_a:Categorical{
+1 Believes in God of the Bible
+2 Does not believe in God of the Bible, does believe in other higher power or spirit
+3 Other
+}
+Q25_b:Categorical{
+1 Does not believe in God of the Bible, does believe in other higher power or spirit
+2 Does not believe in any higher power or spirit
+}
+Q26_:Categorical{
+1 Yes
+2 No
+}
+Q27:Ordinal{
+1 Several times a day
+2 Once a day
+3 A few times a week
+4 Once a week
+5 A few times a month
+6 Seldom
+7 Never
+}
+Q29_:Categorical{
+1 Yes
+2 No
+}
+Q30:Categorical{
+1 Both good deeds and faith in God are required for heaven
+2 Faith in God is the only thing required for heaven
+3 Other
+}
+Q31_:Categorical{
+1 Yes
+2 No
+}
+Q32_a:Ordinal{
+1 Several times a day
+2 Once a day
+3 A few times a week
+4 Once a week
+5 A few times a month
+6 Seldom
+7 Never
+}
+Q32_b:Ordinal{
+1 Pray all five salah daily
+2 Make some of the five salah daily
+3 Occasionally make salah
+4 Only make Eid prayers
+5 Never pray
+}
+Q33:Ordinal{
+1 All of them
+2 Most of them
+3 Some of them
+4 Hardly any of them
+5 None of them
+}
+Q34_:Categorical{
+1 Yes
+2 No
+}
+Q36_:Categorical{
+1 Yes
+2 No
+3 Other
+}
+Q37_:Categorical{
+1 Yes
+2 No
+3 Other
+}
+Q38_:Categorical{
+1 Yes
+2 No
+3 Other
+}
+Q39_:Categorical{
+1 Yes
+2 No
+3 Other
+}
+Q41:Categorical{
+1 Muslim women should be allowed to wear any religious clothing
+2 Muslim women should only be allowed to wear facially revealing religious clothing
+3 Muslim women should not be allowed to wear any religious clothing
+}
+Q42_:Ordinal{
+1 Completely agree
+2 Mostly agree
+3 Mostly disagree
+4 Completely disagree
+}
+Q43:Ordinal{
+1 Be increased
+2 Remain the same
+3 Be reduced
+}
+Q45_:Categorical{
+1 Yes
+2 No
+}
+Q46_:Categorical{
+1 Yes
+2 No
+}
+Q47:Ordinal{
+1 Most
+2 Many
+3 Just some
+4 Very few
+5 All
+6 None
+}
+Q48_:Ordinal{
+1 Very proud
+2 Somewhat proud
+3 Not very proud
+4 Not proud at all
+5 Nonidentifying
+}
+Q49_:Ordinal{
+1 Very important
+2 Somehwat important
+3 Not very important
+4 Not at all important
+}
+Q50:Ordinal{
+1 Completely agree
+2 Mostly agree
+3 Mostly disagree
+4 Completely disagree
+}
+Q51:Categorical{
+1 More similar than different
+2 More different than similar
+3 Other
+}
+QPtyfvr[COUNTRY]_:Ordinal{
+1 Very favorable
+2 Somewhat favorable
+3 Somewhat unfavorable
+4 Very unfavorable
+!AUT{
+}
+BEG{
+}
+DNK{
+}
+FIN{
+}
+FRA{
+}
+DEU{
+}
+IRL{
+}
+ITA{
+}
+NLD{
+}
+NOR{
+}
+PRT{
+}
+SLO{
+}
+ESP{
+}
+SWE{
+}
+CHE{
+}
+GBR{
+}
+}
+QGen:Categorical{
+1 Male
+2 Female
+}
+QAge:Cardinal{
+}
+QMarried:Categorical{
+1 Married
+2 In a civil partnership
+3 Living with partner
+4 Divorced
+5 Separated
+6 Widowed
+7 Never married
+}
+QSprel:Categorical{
+1 Christian
+2 Muslim
+3 Jewish
+4 Buddhist
+6 Hindu
+9 Atheist
+10 Agnostic
+91 Something else
+92 Nothing in particular
+}
+QFert:Cardinal{
+}
+QParent:Categorical{
+1 Yes
+2 No
+}
+QChild:Categorical{
+1 Christian
+2 Muslim
+3 Jewish
+4 Buddhist
+6 Hindu
+9 Atheist
+10 Agnostic
+91 Something else
+92 Nothing in particular
+93 Multiple religions
+}
+QEdu[COUNTRY]:Ordinal{
+!AUT{
+1 Finished school without a first general education qualification
+2 Secondary school leaving certificate, primary school leaving certificate 8th grade (even if you attend an intermediate/upper secondary school without a corresponding qualification)
+3 Polytechnic (9th grade)
+4 Vocational school and apprenticeship
+5 Vocational middle school (min. 2 years, e.g. commercial school, technical school)
+6 AHS or Vocational Secondary School
+7 School of Health and Nursing, Schools of Medical-Technical Service
+8 Matura or higher education entrance qualification in second chance education
+9 Vocational academy or college (with diploma degree)
+10 Bachalaureat (College, University, University of Applied Sciences)
+11 Magisterium/Diploma (College, University, University of Applied Sciences)
+12 Doctorate or habilitation (college, university, university of applied sciences)
+}
+BEG{
+1 Primary school not finished
+2 Primary school diploma
+3 Lower secondary education: Lower Vocational Secondary Education (BSO)
+4 Lower Secondary Education: Lower Technical Secondary Education (TSO)
+5 Lower Secondary Education: Lower General Secondary Education (ASO)
+6 Upper secondary education: Diploma of Vocational Secondary Education (BSO)
+7 Upper secondary education: Technical Secondary Education Diploma (TSO)
+8 Upper secondary education: General Secondary Education Diploma (ASO)
+9 Higher non-university education of the short type (2-3 years)
+10 University education: candidate or bachelor
+11 Higher non-university education of the long type (4 years)
+12 University education: licentiate or master's degree
+13 University education: doctorate
+}
+DNK{
+1 No schooling. Kindergarten class. 1st-5th grade
+2 Primary school 6th-8th grade
+3 Primary school 9th-10th grade
+4 Upper secondary education, upper secondary education, HF, HHX, HTX
+5 Short vocational training of less than 1-2 years' duration, e.g. AMU Labour Market Training, Basic Year of Vocational Education
+6 Vocational training (crafts, trade, agriculture, etc.), e.g. skilled workers, social and health care assistant training and similar
+7 Short higher education of up to 2-3 years' duration, e.g. Academy of Business Education, e.g. computer scientist, dental hygienist, construction technician, installer, Graduate Diploma
+8 Medium-length higher education of 3-4 years' duration. Professional bachelor's degrees, e.g. Bachelor of Engineering, Nurse, School Teacher, Pedagogue, Journalist, BSc in Business Administration
+9 University Bachelor's degree. 1st part of Master's degree
+10 Long higher education. Master's degree programmes of 5-6 years' duration, e.g. Cand.mag., cand.jur., cand.polyt. Etc
+11 Licentiate
+12 Research training. PhD, doctor
+}
+FIN{
+1 Less than primary school or less than primary school
+2 Grades 1-6 of comprehensive school or elementary school
+3 Grades 7-9 of comprehensive school or elementary school
+4 General Upper Secondary School, Matriculation Examination
+5 Vocational upper secondary qualification, further vocational qualification
+6 Both the matriculation examination and the vocational qualification
+7 Specialist Vocational Qualification
+8 Vocational post-secondary qualification
+9 Polytechnic degree or vocational tertiary degree
+10 Bachelor's degree or bachelor's degree
+11 Master's degree
+12 Master's degree
+13 Licentiate degree
+14 Doctorate
+}
+FRA{
+1 Not enrolled in school or primary school not completed
+2 Primary school with the CEP (Certificate of Primary Education)
+3 Lower secondary education – Collège (Brevet)
+4 Upper secondary vocational education (under school and apprenticeship status) (CAP, BEP, etc.)
+5 Upper secondary general education (General and Technological Baccalaureate)
+6 Pre-university education (Diploma of Legal Capacity, University Entrance Diploma)
+7 Preparation for entry into selective Level 5B training (Preparatory courses for paramedical and social work schools, BTS bridging classes)
+8 Social work school and other training programs (Diploma of Educational Monitor, Specialized Technical Educator)
+9 University Diploma of Technology (DUT) // Higher Technician's Certificate (BTS), Diploma of Arts and Crafts (DMA)
+10 Undergraduate studies (Diploma of Studies) General university degrees (DEUG, Bachelor's, Bachelor's (LMD))
+11 Second-cycle university studies (Master's, Diploma (DESS), Master's (LMD), Engineering Diploma)
+12 Postgraduate university studies (Diploma of Advanced Studies (DEA))
+13 Postgraduate university studies (Doctorate)
+}
+DEU{
+1 No school leaving certificate / Primary school
+2 Elementary or secondary school, polytechnic secondary school (POS) 8th grade (1965 or later)
+3 Intermediate school leaving certificate, secondary school leaving certificate, POS 10th grade (before 1965: 8th grade)
+4 University entrance qualification, advanced technical college entrance qualification, higher education entrance qualification (Gymnasium or extended secondary school, EOS with apprenticeship)
+5 Completed Bachelor's degree / basic studies / preliminary diploma / vocational academy, incomplete main or Master's degree
+6 Completed main or Master's degree
+7 Doctorate
+}
+IRL{
+1 No qualifications
+2 Primary school
+3 Middle school
+4 Upper secondary school
+5 Post-diploma professional specialization
+6 Bachelor's degree
+7 Master's degree
+8 Post-graduate specialization
+9 PhD
+}
+ITA{
+1 No qualifications
+2 Primary school
+3 Middle school
+4 Upper secondary school
+5 Post-diploma professional pecialization
+6 Bachelor's degree
+7 Master's degree
+8 Post-graduate specialization
+9 PhD
+}
+NLD{
+1 No education
+2 Primary education
+3 Lower Secondary Vocational Education (LBO) / Pre-vocational Secondary Education (VBO) / Pre-vocational Secondary Education (VMBO) (framework and vocational learning pathways) / Secondary Vocational Education (MBO) 1
+4 MAVO \ first 3 years HAVO and VWO \ VMBO (theoretical and mixed learning pathways)
+5 HAVO and VWO upper years
+6 MBO 2, 3, 4 or MBO old structure
+7 MBO-plus for HAVO graduates / MBO 4 - specialist
+8 Higher Professional Education (HBO) / University (WO) propaedeutic year / Higher Professional Education (HBO) / University (WO) Bachelor's or Candidate's degree
+9 Higher Professional Education (HBO) / University (WO) Master's or Doctoral degree
+10 Doctorate
+}
+NOR{
+1 No education and/or pre-school education
+2 Primary school education
+3 Secondary school education (incl. Primary education, 7-year folkeskole and pharamhladsskole)
+4 Upper secondary basic education (incl. vk1. Folkehøgskole, realskole)
+5 Upper secondary, final education (incl. vk2, vk3, gymnasium)
+6 Extension to upper secondary education (incl. College not approved by the Norwegian Council for Higher Education, preparatory courses that are part of university or college education, technical vocational school)
+7 University and college education, lower level
+8 University and college education, higher level
+9 Research education
+}
+PRT{
+1 None
+2 Basic Education 1 (up to 4th grade)
+3 Basic Education 2 (preparatory/5th and 6th grades)
+4 Basic Education 3 (up to 9th grade/5th year of high school, commercial/industrial school)
+5 Secondary Education General Courses (12th/7th year of high school complete, preparatory, civic service)
+6 Secondary Education Technological Courses
+7 Technological specialization courses. Awarding of "Technological Specialization Diploma"
+8 Higher Education – Bachelor's Degree
+9 Higher Education – Master's Degree (Post-Bologna)
+10 Higher Education – Bachelor's Degree
+11 Higher Education – Master's Degree (Pre-Bologna)
+12 Higher Education - Doctorate
+}
+SLO{
+1 Unfinished primary school (unfinished folk school or middle school)
+2 Completed primary school (eight grades of folk school or completed middle school)
+3 Primary education + apprenticeship, vocational training, course (without apprenticeship certificate)
+4 Vocational school or economic school (without matriculation exam)
+5 SK- Trained with apprenticeship certificate or certificate (without matriculation exam)
+6 Complete secondary vocational school with matriculation exam (e.g. industrial school, economic school, business academy, secondary medical school)
+7 Trained with matriculation exam
+8 Complete secondary general school (gymnasium, SVŠ)
+9 Post-secondary studies
+10 University - Bachelor's degree
+11 University - completed master's, engineering studies (or their equivalent), including the titles PhDr., MUDr., JUDr. and so on
+12 Postgraduate studies (degrees CSc., PhD., Doc., etc.
+}
+ESP{
+1 No schooling. Cannot read or write (illiterate)
+2 Less than 5 years of schooling / Early Childhood Education
+3 Incomplete primary education
+4 Primary school certificate / First grade (EGB 1st stage 1 school certificate, approximately 10 years old)
+5 Second grade, first cycle (School graduate or EGB stage 2 or 1st or 2nd year of ESO, first cycle, up to 14 years old)
+6 Intermediate vocational training (certification); Intermediate Vocational Training Cycles (Technician)
+7 Second Cycle (FP I and II, Higher Baccalaureate, BUP 3rd and 4th ESO, Second Cycle COU, PREU 1st and 2nd Baccalaureate up to age 18)
+8 Higher Vocational Training Cycles (Advanced Technician)
+9 University Diploma (University Diploma, Technical Architect, and Technical Engineer)
+10 University Bachelor's Degree (Bachelor's, Architect, and Engineer)
+11 Official Master's Degree
+12 Official Postgraduate Qualifications (Doctorate, Medical/Health Specialties)
+}
+SWE{
+1 No formal schooling (preschool or daycare)
+2 Primary school (compulsory school) grades 1-6, including basic adult education
+3 Primary school (compulsory school) grades 7-9
+4 Upper secondary education, including folk high school, upper secondary school
+5 National state schools for adults - post-secondary education programmes, preparatory (Centre for flexible learning/additional education or Technical Basic Year)
+6 Qualified post-secondary vocational education, 2-3 years
+7 University degree, general or vocational
+8 Bachelor's degree
+9 Master's degree, general or vocational
+10 Licentiate or Doctorate
+}
+CHE{
+1 Incomplete Primary School
+2 Primary School
+3 Secondary, Intermediate, and Upper Secondary School
+4 Vocational Education and Training (Second Apprenticeship)
+5 Basic Vocational Education and Training (Federal Vocational Certificate): Apprenticeship in a company and school, Commercial School (1 year), General Education School (1-2 years)
+6 Apprenticeship (Federal Certificate of Competence): Training companies, vocational schools
+7 Vocational Baccalaureate Schools, Teacher Training College, School for Teaching Professions, Higher Commercial School
+8 Specialized Secondary Schools (FMS) (Specialized Baccalaureate, Specialized Secondary School Diploma): Diploma Secondary Schools (DMS), Commercial School (3 years)
+9 Baccalaureate Schools after Apprenticeship, Vocational Baccalaureate for Adults
+10 Vocational Baccalaureate Schools, Teacher Training College, School for Teaching Professions, Higher Commercial School
+11 Academic Baccalaureate Schools, Gymnasium, Teacher Training College, School for Teaching Professions, Higher Commercial School
+12 Baccalaureate Schools for Adults, Academic Baccalaureate for Adults
+13 Higher Vocational training (Diploma, Federal Certificate of Competence), Universities of Applied Sciences, Higher Technical Colleges (HTL)
+14 Higher vocational education not regulated by the federal government
+15 (First degree) Universities of Applied Sciences (UAS), Universities of Teacher Education (PH) (Bachelor's degree)
+16 (Second degree) Universities of Applied Sciences (UAS), Universities of Teacher Education (PH) (Master's degree, Diploma, Postgraduate diploma)
+17 Universities, Federal Institutes of Technology (ETH) (Bachelor's degree)
+18 Universities, Federal Institutes of Technology (ETH) (Master's degree, Licentiate, Diploma, Postgraduate diploma)
+19 Doctorate, PhD
+}
+GBR{
+1 No qualifications obtained
+2 Primary school / infant & junior schools
+3 GCSE /CSE/GCE O-level (any grades); Scottish SCE Ordinary Bands; Scottish School Leaving Certificate Lower Grade; Scottish Intermediate 1 or 2; Foundation/Intermediate Welsh Baccalaureate; GNVQ or GSVQ Foundation level; Vocational GCSE
+4 A-levels; S-levels; A2-level; GCE Applied A-level; NVQ/SVQ Levels 1-3; Scottish Highers; Scottish SCE/SLC/SUPE at Higher Grade; Scottish Higher School Certificate; Certificate of Sixth Year Studies/Advanced Higher Grade; Welsh Advanced Baccalaureate; International Baccalaureate; GNVQ/SNVQ Intermediate/Advanced
+5 Nursing certificate
+6 Foundation degree/HND/Higher Education Diploma/NVQ 4, NVQ5
+7 University (Bachelor)
+8 University (Masters degree)
+9 University (Doctorate, PHD)
+}
+}
+Q52_:Categorical{
+1 Yes
+2 No
+}
+QInca[COUNTRY]:Ordinal{
+!AUT{
+1 Less than €1,050
+2 €1,050 to €1,300
+3 €1,300 to €1,550
+4 €1,550 to €1,750
+5 €1,750 to €1,950
+6 €1,950 to €2,150
+7 €2,150 to €2,400
+8 €2,400 to €2,750
+9 €2,750 to €3,350
+10 €3,350 or more
+}
+BEG{
+1 Less than €950
+2 €950 to €1,200
+3 €1,200 to €1,400
+4 €1,400 to €1,600
+5 €1,600 to €1,800
+6 €1,800 to €2,050
+7 €2,050 to €2,300
+8 €2,300 to €2,600
+9 €2,600 to €3,100
+10 €3,100 or more
+}
+DNK{
+1 Less than 120,350kr.
+2 120,350kr. to 147,300kr.
+3 147,300kr. to 168,000kr.
+4 168,000kr. to 189,450kr.
+5 189,450kr. to 211,450kr.
+6 211,450kr. to 234,050kr.
+7 234,050kr. to 261,600kr.
+8 261,600kr. to 297,700kr.
+9 297,700kr. to 355,800kr.
+10 355,800kr. or more
+}
+FIN{
+1 Less than €13,600
+2 €13,600 to €16,350
+3 €16,350 to €18,950
+4 €18,950 to €21,250
+5 €21,250 to €23,750
+6 €23,750 to €26,500
+7 €26,500 to €29,550
+8 €29,550 to €33,750
+9 €33,750 to €40,950
+10 €40,950 or more
+}
+FRA{
+1 Less than €990
+2 €990s to €1250
+3 €1250 to €1450
+4 €1450 to €1675
+5 €1675 to €1900
+6 €1900 to €2175
+7 €2175 to €2450
+8 €2450 to €3125
+9 €3125 to €3800
+10 €3800 to €5350
+11 €5350 or more
+}
+DEU{
+1 Less than €850
+2 €850 to €1,050
+3 €1,050 to €1,250
+4 €1,250 to €1,400
+5 €1,400 to €1,600
+6 €1,600 to €1,850
+7 €1,850 to €2,150
+8 €2,150 to €2,550
+9 €2,550 to €3,200
+10 €3,200 or more
+}
+IRL{
+1 Less than €850
+2 €850 to €1,050
+3 €1,050 to €1,250
+4 €1,250 to €1,400
+5 €1,400 to €1,600
+6 €1,600 to €1,850
+7 €1,850 to €2,150
+8 €2,150 to €2,550
+9 €2,550 to €3,200
+10 More than €3,200
+}
+ITA{
+1 Less than €750
+2 €750 to €1000
+3 €1001 to €1250
+4 €1251 to €1500
+5 €1501 to €2000
+6 €2001 to €2500
+7 €2501 to €4000
+8 More than €4000
+}
+NLD{
+1 Less than €500
+2 €500 to €1000
+3 €1000 to €1500
+4 €1500 to €2000
+5 €2000 to €2500
+6 €2500 to €3000
+7 €3000 to €3500
+8 €3500 to €4000
+9 €4000 or more
+}
+NOR{
+1 Less than NOK 197,050
+2 NOK 197,050 to NOK 250,100
+3 NOK 250,100 to NOK 285,400
+4 NOK 285,400 to NOK 317,600
+5 NOK 317,600 to NOK 346,550
+6 NOK 346,550 to NOK 379,500
+7 NOK 379,500 to NOK 414,650
+8 NOK 414,650 to NOK 466,600
+9 NOK 466,600 to NOK 559,350
+10 NOK 559,350 or more
+}
+PRT{
+1 Less than €300
+2 €300 to €450
+3 €450 to €500
+4 €500 to €600
+5 €600 to €700
+6 €700 to €800
+7 €800 to €950
+8 €950 to €1,100
+9 €1,100 to €1,450
+10 €1,450 or more
+}
+SLO{
+1 Less than €300
+2 €300 to €400
+3 €400 to €450
+4 €450 to €500
+5 €500 to €600
+6 €600 to €650
+7 €650 to €700
+8 €700 to €800
+9 €800 to €900
+10 €900 or more
+}
+ESP{
+1 Less than €500
+2 €500 to €749
+3 €750 to €999
+4 €1,000 to €1,149
+5 €1,150 to €1,249
+6 €1,250 to €1,499
+7 €1,500 to €1,749
+8 €1,750 to €1,999
+9 €2,000 to €2,499
+10 €2,500 to €2,999
+11 €3,000 to €4,999
+12 €5,000 or more
+}
+SWE{
+1 Less than 2,000 krona
+2 2,000 krona to 5,999 krona
+3 6,000 krona to 9,999 krona
+4 10,000 krona to 13,999 krona
+5 14,000 krona to 17,999 krona
+6 18,000 krona to 21,999 krona
+7 22,000 krona to 25,999 krona
+8 26,000 krona to 29,999 krona
+9 30,000 krona to 33,999 krona
+10 34,000 krona to 37,999 krona
+11 38,000 krona to 41,999 krona
+12 42,000 krona to 45,999 krona
+13 46,000 krona or more
+}
+CHE{
+1 Less than CHF 2,100
+2 CHF 2,100 to CHF 2,650
+3 CHF 2,650 to CHF 3,100
+4 CHF 3,100 to CHF 3,450
+5 CHF 3,450 to CHF 3,900
+6 CHF 3,900 to CHF 4,400
+7 CHF 4,400 to CHF 5,000
+8 CHF 5,000 to CHF 5,800
+9 CHF 5,800 to CHF 7,350
+10 CHF 7,350 or more
+}
+GBR{
+1 Annual
+2 Monthly
+3 Weekly
+}
+}
+QIncb[COUNTRY]:Ordinal{
+!AUT{
+1 Below median
+2 Above median
+}
+BEG{
+1 Below median
+2 Above median
+}
+DNK{
+1 Below median
+2 Above median
+}
+FIN{
+1 Below median
+2 Above median
+}
+FRA{
+1 Below median
+2 Above median
+}
+DEU{
+1 Below median
+2 Above median
+}
+IRL{
+1 Below median
+2 Above median
+}
+ITA{
+1 Below median
+2 Above median
+}
+NLD{
+1 Below median
+2 Above median
+}
+NOR{
+1 Below median
+2 Above median
+}
+PRT{
+1 Below median
+2 Above median
+}
+SLO{
+1 Below median
+2 Above median
+}
+ESP{
+1 Below median
+2 Above median
+}
+SWE{
+1 Below median
+2 Above median
+}
+CHE{
+1 Below median
+2 Above median
+}
+GBR{
+1 Less than £6,000
+2 £6,001 to £10,000
+3 £10,001 to £14,000
+4 £14,001 to £18,000
+5 £18,001 to £22,000
+6 £22,001 to £26,400
+7 £26,401 to £32,000
+8 £32,001 to £38,000
+9 £38,001 to £44,000
+10 £44,001 to £50,000
+11 £50,001 to £60,000
+12 £60,001 to £70,000
+13 £70,001 to £80,000
+14 £80,001 or more
+}
+}
+QIncc[COUNTRY]:Ordinal{
+1 Below median
+2 Above median
+!AUT{
+}
+BEG{
+}
+DNK{
+}
+FIN{
+}
+FRA{
+}
+DEU{
+}
+IRL{
+}
+ITA{
+}
+NLD{
+}
+NOR{
+}
+PRT{
+}
+SLO{
+}
+ESP{
+}
+SWE{
+}
+CHE{
+}
+GBR{
+}
+}
+QIncd[COUNTRY]:Ordinal{
+!GBR{
+1 Less than £400
+2 £401 to £700
+3 £701 to £1,000
+4 £1,001 to £1,300
+5 £1,301 to £1,600
+6 £1,601 to £2,200
+7 £2,201 to £2,800
+8 £2,801 to £3,400
+9 £3,401 to £4,000
+10 £4,001 to £5,000
+11 £5,001 or more
+}
+}
+QInce[COUNTRY]:Ordinal{
+!GBR{
+1 Below median
+2 Above median
+}
+}
+QIncf[COUNTRY]:Ordinal{
+!GBR{
+1 Less than £125
+2 £126 to £250
+3 £251 to £375
+4 £376 to £500
+5 £501 to £625
+6 £626 to £750
+7 £751 to £875
+8 £876 to £1,000
+9 £1,001 to £1,125
+10 £1,126 to £1,250
+11 £1,250 or more
+}
+}
+QIncg[COUNTRY]:Ordinal{
+!GBR{
+1 Below median
+2 Above median
+}
+}
+QInch[COUNTRY]:Ordinal{
+!GBR{
+1 Annual
+2 Monthly
+3 Weekly
+}
+}
+QInci[COUNTRY]:Ordinal{
+!GBR{
+1 Below median
+2 Above median
+}
+}
+QIncj[COUNTRY]:Ordinal{
+!GBR{
+1 Below median
+2 Above median
+}
+}
+QInck[COUNTRY]:Ordinal{
+!GBR{
+1 Below median
+2 Above median
+}
+}
+QIdeology:Ordinal{
+0 Leftmost
+1 Left
+2 Center left
+3 Center
+4 Center right
+5 Right
+6 Rightmost
+}
+QPtypotvot[COUNTRY]:Categorical{
+!AUT{
+1 Social Democratic Party of Austria
+2 Austrian People's Party
+3 Freedom Party of Austria
+4 The Greens: The Green Alternative
+5 Team Stronach for Austria
+6 NEOS: The New Austria and Liberal Forum
+}
+BEG{
+1 New Flemish Alliance
+2 Socialist Party
+3 Reformist Movement
+4 Flemish Christian Democrats
+5 Open Flemish Liberals and Democrats
+6 Socialist Party Different
+7 Humanistic and Democratic Centre
+8 Green
+9 Ecologists
+10 Flemish Interest
+11 Labour Party
+12 Democratic Federalist Independent
+13 People's Party
+}
+DNK{
+1 Social Democrats
+2 Danish People's Party
+3 Liberal Party
+4 Red-Green Alliance
+5 Liberal Alliance
+6 The Alternative
+7 Social Liberal Party
+8 Socialist People's Party
+9 Conservative People's Party
+10 Christian Democrats
+11 New Civic Party
+}
+FIN{
+1 Centre Party
+2 Finns Party
+3 National Coalition Party
+4 Social Democratic Party of Finland
+5 Green League
+6 Left Alliance
+7 Swedish People's Party of Finland
+8 Christian Democrats
+9 Pirate Party of Finland
+}
+FRA{
+1 Socialist Party
+2 The Republicans
+3 National Front
+4 Democratic Movement
+5 Europe Ecology: The Greens
+6 French Communist Party
+7 Union of Democrats and Independents
+8 Workers’ Struggle – New Anticapitalist Party
+9 Left Party
+10 Forward!
+}
+DEU{
+1 Social Democratic Party of Germany
+2 Christian Democratic Union of Germany
+3 Christian Social Union in Bavaria
+4 Alliance '90/The Greens
+5 Free Democratic Party
+6 The Left
+7 National Democratic Party of Germany
+8 Pirate Party Germany
+9 Alternative for Germany
+}
+IRL{
+1 Fine Gael
+2 Fianna Fáil
+3 Sinn Féin
+4 Labour Party
+5 Anti-Austerity Alliance - People Before Profit Alliance
+6 Green Party
+7 Social Democrats
+8 Independents
+}
+ITA{
+1 Forward Italy
+2 Brothers of Italy – National Alliance
+3 Italy of Values
+4 The Right
+5 Northern League
+6 Five Star Movement
+7 New Centre-Right/Union of the Centre
+8 Democratic Party
+9 Italian Radicals
+10 Communist Refoundation Party
+11 Civic Choice
+12 Left Ecology Freedom–Italian Left
+13 Conservatives and Reformists
+14 Liberal Popular Alliance – Autonomies
+}
+NLD{
+1 People's Party for Freedom and Democracy
+2 Labour Party
+3 Party for Freedom
+4 Christian Democratic Appeal
+5 Socialist Party
+6 Democrats 66
+7 ChristianUnion
+8 GreenLeft
+9 Reformed Political Party
+10 Party for the Animals
+11 50PLUS
+12 Think Party
+}
+NOR{
+1 Labour Party
+2 Conservative Party
+3 Progress Party
+4 Christian Democratic Party
+5 Center Party
+6 Liberal Party
+7 Socialist Left Party
+8 Green Party
+9 Red Party
+}
+PRT{
+1 Social Democratic Party
+2 Socialist Party
+3 Left Bloc
+4 CDS
+5 Portuguese Communist Party
+6 Ecologist Party "The Greens"
+7 People-Animals-Nature
+}
+SLO{
+1 Direction – Social Democracy
+2 Freedom and Solidarity
+3 Ordinary People and Independent Personalities/New Majority
+4 Slovak National Party
+5 Most–Híd (Most)
+6 People's Party – Our Slovakia
+7 We Are Family – Boris Kollár
+8 #NETWORK
+9 Christian Democratic Movement
+10 Party of the Hungarian Community
+}
+ESP{
+1 Spanish Socialist Workers' Party
+2 People's Party
+3 We Can
+4 Citizens
+5 Republican Left of Catalonia-Catalonia Yes
+6 Catalan European Democratic Party
+7 Basque Nationalist Party
+8 Animalist Party Against Mistreatment of Animals
+9 Basque Country Unite
+10 Canarian Coalition-Canarian Nationalist Party
+11 Zero Cuts–Green Group
+12 Union, Progress and Democracy
+13 Vox
+14 Galician Nationalist Bloc - Usto Galician Candidacy
+15 Communist Party of the Peoples of Spain
+16 Yes to the Future
+17 Citizens for Blank Votes
+18 España 2000
+19 United Left
+20 Equo
+}
+SWE{
+1 Swedish Social Democratic Party
+2 Moderate Party
+3 Sweden Democrats
+4 Green Party
+5 Centre Party
+6 Left Party
+7 Liberals
+8 Christian Democrats
+9 Feminist Initiative
+}
+CHE{
+1 Swiss People's Party
+2 Social Democratic Party
+3 FDP.The Liberals
+4 Christian Democratic People's Party
+5 Green Partys
+6 Conservative Democratic Party
+7 Green Liberal Party
+8 Evangelical People's Party
+9 Federal Democratic Union
+}
+GBR{
+1 Labour Party
+2 Conservative Party
+3 Liberal Democrats
+4 Scottish National Party (SNP)
+5 Plaid Cymru – Party of Wales
+6 Green Party
+7 UK Independence Party
+8 Sinn Fein
+9 Social Democratic and Labour Party
+10 Ulster Unionist Party
+11 Democratic Unionist Party
+}
+}
+QPtycls[COUNTRY]:Categorical{
+!AUT{
+1 Social Democratic Party of Austria
+2 Austrian People's Party
+3 Freedom Party of Austria
+4 The Greens: The Green Alternative
+5 Team Stronach for Austria
+6 NEOS: The New Austria and Liberal Forum
+}
+BEG{
+1 New Flemish Alliance
+2 Socialist Party
+3 Reformist Movement
+4 Flemish Christian Democrats
+5 Open Flemish Liberals and Democrats
+6 Socialist Party Different
+7 Humanistic and Democratic Centre
+8 Green
+9 Ecologists
+10 Flemish Interest
+11 Labour Party
+12 Democratic Federalist Independent
+13 People's Party
+}
+DNK{
+1 Social Democrats
+2 Danish People's Party
+3 Liberal Party
+4 Red-Green Alliance
+5 Liberal Alliance
+6 The Alternative
+7 Social Liberal Party
+8 Socialist People's Party
+9 Conservative People's Party
+10 Christian Democrats
+11 New Civic Party
+}
+FIN{
+1 Centre Party
+2 Finns Party
+3 National Coalition Party
+4 Social Democratic Party of Finland
+5 Green League
+6 Left Alliance
+7 Swedish People's Party of Finland
+8 Christian Democrats
+9 Pirate Party of Finland
+}
+FRA{
+1 Socialist Party
+2 The Republicans
+3 National Front
+4 Democratic Movement
+5 Europe Ecology: The Greens
+6 French Communist Party
+7 Union of Democrats and Independents
+8 Workers’ Struggle – New Anticapitalist Party
+9 Left Party
+10 Forward!
+}
+DEU{
+1 Social Democratic Party of Germany
+2 Christian Democratic Union of Germany
+3 Christian Social Union in Bavaria
+4 Alliance '90/The Greens
+5 Free Democratic Party
+6 The Left
+7 National Democratic Party of Germany
+8 Pirate Party Germany
+9 Alternative for Germany
+}
+IRL{
+1 Fine Gael
+2 Fianna Fáil
+3 Sinn Féin
+4 Labour Party
+5 Anti-Austerity Alliance - People Before Profit Alliance
+6 Green Party
+7 Social Democrats
+8 Independents
+}
+ITA{
+1 Forward Italy
+2 Brothers of Italy – National Alliance
+3 Italy of Values
+4 The Right
+5 Northern League
+6 Five Star Movement
+7 New Centre-Right/Union of the Centre
+8 Democratic Party
+9 Italian Radicals
+10 Communist Refoundation Party
+11 Civic Choice
+12 Left Ecology Freedom–Italian Left
+13 Conservatives and Reformists
+14 Liberal Popular Alliance – Autonomies
+}
+NLD{
+1 People's Party for Freedom and Democracy
+2 Labour Party
+3 Party for Freedom
+4 Christian Democratic Appeal
+5 Socialist Party
+6 Democrats 66
+7 ChristianUnion
+8 GreenLeft
+9 Reformed Political Party
+10 Party for the Animals
+11 50PLUS
+12 Think Party
+}
+NOR{
+1 Labour Party
+2 Conservative Party
+3 Progress Party
+4 Christian Democratic Party
+5 Center Party
+6 Liberal Party
+7 Socialist Left Party
+8 Green Party
+9 Red Party
+}
+PRT{
+1 Social Democratic Party
+2 Socialist Party
+3 Left Bloc
+4 CDS
+5 Portuguese Communist Party
+6 Ecologist Party "The Greens"
+7 People-Animals-Nature
+}
+SLO{
+1 Direction – Social Democracy
+2 Freedom and Solidarity
+3 Ordinary People and Independent Personalities/New Majority
+4 Slovak National Party
+5 Most–Híd (Most)
+6 People's Party – Our Slovakia
+7 We Are Family – Boris Kollár
+8 #NETWORK
+9 Christian Democratic Movement
+10 Party of the Hungarian Community
+}
+ESP{
+1 Spanish Socialist Workers' Party
+2 People's Party
+3 We Can
+4 Citizens
+5 Republican Left of Catalonia-Catalonia Yes
+6 Catalan European Democratic Party
+7 Basque Nationalist Party
+8 Animalist Party Against Mistreatment of Animals
+9 Basque Country Unite
+10 Canarian Coalition-Canarian Nationalist Party
+11 Zero Cuts–Green Group
+12 Union, Progress and Democracy
+13 Vox
+14 Galician Nationalist Bloc - Usto Galician Candidacy
+15 Communist Party of the Peoples of Spain
+16 Yes to the Future
+17 Citizens for Blank Votes
+18 España 2000
+19 United Left
+20 Equo
+}
+SWE{
+1 Swedish Social Democratic Party
+2 Moderate Party
+3 Sweden Democrats
+4 Green Party
+5 Centre Party
+6 Left Party
+7 Liberals
+8 Christian Democrats
+9 Feminist Initiative
+}
+CHE{
+1 Swiss People's Party
+2 Social Democratic Party
+3 FDP.The Liberals
+4 Christian Democratic People's Party
+5 Green Partys
+6 Conservative Democratic Party
+7 Green Liberal Party
+8 Evangelical People's Party
+9 Federal Democratic Union
+}
+GBR{
+1 Labour Party
+2 Conservative Party
+3 Liberal Democrats
+4 Scottish National Party (SNP)
+5 Plaid Cymru – Party of Wales
+6 Green Party
+7 UK Independence Party
+8 Sinn Fein
+9 Social Democratic and Labour Party
+10 Ulster Unionist Party
+11 Democratic Unionist Party
+}
+}
+QCitizen:Categorical{
+1 Yes
+2 No
+}
+QBorn:Categorical{
+1 Austria
+2 Belgium
+3 Denmark
+4 Finland
+5 France
+6 Germany
+7 Ireland
+8 Italy
+9 Netherlands
+10 Norway
+11 Portugal
+12 Slovakia
+13 Spain
+14 Sweden
+15 Switzerland
+16 United Kingdom
+97 Other
+}
+QBornmthr:Categorical{
+1 Austria
+2 Belgium
+3 Denmark
+4 Finland
+5 France
+6 Germany
+7 Ireland
+8 Italy
+9 Netherlands
+10 Norway
+11 Portugal
+12 Slovakia
+13 Spain
+14 Sweden
+15 Switzerland
+16 United Kingdom
+97 Other
+}
+QBornfthr:Categorical{
+1 Austria
+2 Belgium
+3 Denmark
+4 Finland
+5 France
+6 Germany
+7 Ireland
+8 Italy
+9 Netherlands
+10 Norway
+11 Portugal
+12 Slovakia
+13 Spain
+14 Sweden
+15 Switzerland
+16 United Kingdom
+97 Other
+}
+Isced:Ordinal{
+0 Early childhood
+1 Primary educaton
+2 Lower secondary education
+3 Upper secondary education
+4 Post-secondary non-tertiary education
+5 Short-cycle tertiary education
+6 Bachelor or equivalent
+7 Master or equivalent
+8 Doctoral or equivalent
+}
