@@ -95,7 +95,7 @@ QCurrel:Categorical{
 6 Hindu
 9 Atheist
 10 Agnostic
-91 Something else
+91 Another relgion
 92 Nothing in particular
 }
 QCurreld:Categorical{
@@ -103,96 +103,22 @@ QCurreld:Categorical{
 2 Muslim
 3 Neither
 }
-QDenom[COUNTRY]:Categorical{
-91 Something else
-92 No particular denomination
-93 Protestant
-94 Just Christian
-!AUT{
-1 Orthodox
-2 Catholic
-8 Lutheran
-}
-BEG{
-2 Catholic
-}
-DNK{
-2 Catholic
-8 Lutheran
-}
-FIN{
-1 Orthodox
-3 Pentecostal
-8 Lutheran
-}
-FRA{
-1 Orthodox
-2 Catholic
-3 Pentecostal
-}
-DEU{
-1 Orthodox
-2 Catholic
-8 Lutheran
-}
-IRL{
-2 Catholic
-13 Anglican
-}
-ITA{
-2 Catholic
-3 Pentecostal
-4 Jehovah's Witness
-}
-NLD{
-2 Catholic
-3 Pentecostal
-10 Presbyterian
-}
-NOR{
-2 Catholic
-3 Pentecostal
-8 Lutheran
-}
-PRT{
-2 Catholic
-3 Pentecostal
-4 Jehovah's Witness
-14 Non-traditional
-}
-SLO{
-1 Orthodox
-2 Catholic
-8 Lutheran
-10 Presbyterian
-}
-ESP{
-2 Catholic
-}
-SWE{
-1 Orthodox
-2 Catholic
-3 Pentecostal
-8 Lutheran
-15 Congregationalist
-}
-CHE{
+QDenom:Categorical{
 1 Orthodox
 2 Catholic
 3 Pentecostal
 4 Jehovah's Witness
-10 Presbyterian
-}
-GBR{
-1 Orthodox
-2 Catholic
-3 Pentecostal
-4 Jehovah's Witness
+8 Lutheran
 10 Presbyterian
 11 Methodist
 13 Anglican
+14 Non-traditional
+15 Congregationalist
 16 Fundamentalist
-}
+91 Another denomination
+92 No particular denomination
+93 Protestant
+94 Just Christian
 }
 Q15_:Ordinal{
 1 More than once a week
@@ -230,99 +156,25 @@ QChrel:Categorical{
 6 Hindu
 9 Atheist
 10 Agnostic
-91 Something else
+91 Itger
 92 Nothing in particlar
 }
-QChdenom[COUNTRY]:Categorical{
-91 Something else
-92 No particular denomination
-93 Protestant
-94 Just Christian
-!AUT{
-1 Orthodox
-2 Catholic
-8 Lutheran
-}
-BEG{
-2 Catholic
-}
-DNK{
-2 Catholic
-8 Lutheran
-}
-FIN{
-1 Orthodox
-3 Pentecostal
-8 Lutheran
-}
-FRA{
-1 Orthodox
-2 Catholic
-3 Pentecostal
-}
-DEU{
-1 Orthodox
-2 Catholic
-8 Lutheran
-}
-IRL{
-2 Catholic
-13 Anglican
-}
-ITA{
-2 Catholic
-3 Pentecostal
-4 Jehovah's Witness
-}
-NLD{
-2 Catholic
-3 Pentecostal
-10 Presbyterian
-}
-NOR{
-2 Catholic
-3 Pentecostal
-8 Lutheran
-}
-PRT{
-2 Catholic
-3 Pentecostal
-4 Jehovah's Witness
-14 Non-traditional
-}
-SLO{
-1 Orthodox
-2 Catholic
-8 Lutheran
-10 Presbyterian
-}
-ESP{
-2 Catholic
-}
-SWE{
-1 Orthodox
-2 Catholic
-3 Pentecostal
-8 Lutheran
-15 Congregationalist
-}
-CHE{
+QChdenom:Categorical{
 1 Orthodox
 2 Catholic
 3 Pentecostal
 4 Jehovah's Witness
-10 Presbyterian
-}
-GBR{
-1 Orthodox
-2 Catholic
-3 Pentecostal
-4 Jehovah's Witness
+8 Lutheran
 10 Presbyterian
 11 Methodist
 13 Anglican
+14 Non-traditional
+15 Congregationalist
 16 Fundamentalist
-}
+91 Another denomination
+92 No particular denomination
+93 Protestant
+94 Just Christian
 }
 Q21_:Categorical{
 1 Yes
@@ -542,7 +394,7 @@ QSprel:Categorical{
 6 Hindu
 9 Atheist
 10 Agnostic
-91 Something else
+91 Another religion
 92 Nothing in particular
 }
 QFert:Cardinal{
@@ -559,7 +411,7 @@ QChild:Categorical{
 6 Hindu
 9 Atheist
 10 Agnostic
-91 Something else
+91 Another Religion
 92 Nothing in particular
 93 Multiple religions
 }
@@ -1155,11 +1007,11 @@ QInck[COUNTRY]:Ordinal{
 }
 }
 QIdeology:Ordinal{
-0 Leftmost
-1 Left
-2 Center left
-3 Center
-4 Center right
+1 Leftmost
+2 Left
+3 Center left
+4 Center
+5 Center right
 5 Right
 6 Rightmost
 }

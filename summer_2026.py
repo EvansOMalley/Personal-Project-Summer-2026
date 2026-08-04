@@ -1,21 +1,19 @@
-# -*- coding: utf-8 -*-
-#%% Initialization
-
 #%% Necessary Imports
 
 import pandas as pd, numpy as np
-from sys import exit
+from warnings import simplefilter
+simplefilter(action="ignore", category=pd.errors.PerformanceWarning)
 
-rel_path = "data/Western_Europe_Public_Data_Church_Tax_Added.csv"
-manual_rel_path = "manuals/manual.txt"
+rel_path = "Data/Western_Europe_Public_Data_Church_Tax_Added.csv"
+codebook_rel_path = "Codebooks/codebook.txt"
 
 parent_df = pd.read_csv(rel_path, skipinitialspace=True)
-with open(manual_rel_path) as f:
-    manual = f.read()
+with open(codebook_rel_path) as f:
+    codebook = f.read()
 
-#%% File Parsing
+#%% Precursor Structures
 
-class ord_leg:
+class OrdLeg:
     def __init__(self, order: str, legend: dict):
         self.order = order
         self.legend = legend
@@ -26,17 +24,33 @@ class ord_leg:
     def leg(self):
         return self.legend
     
+    def values(self):
+        return self.legend.values()
+
+    def keys(self):
+        return self.legend.keys()
+
+    def items(self):
+        return self.legend.items()
+
     def __repr__(self):
-        return f"{self.order}, {self.legend.keys()[0]}"
-    
+        return f"{self.order}, {self.legend}"
+
+    def __str__(self):
+        return f"{self.order}, {self.legend}"
+
+    def __getitem__(self, i):
+        return self.legend[i]
+#%% File Parsing
+
 def parse_next(terminator):
     assert len(terminator) == 1, "Terminator must be one character"
     global s
-    global manual
+    global codebook
     
     passage = ""
-    while manual[s] != terminator:
-        passage += manual[s]
+    while codebook[s] != terminator:
+        passage += codebook[s]
         s += 1
     s += 1
         
@@ -44,53 +58,50 @@ def parse_next(terminator):
 
 
 s = 0
-legends = {}
+Legends = {}
 
-while s < len(manual):
+while s < len(codebook):
     col_legend = {}
     name = parse_next(':')
     order = parse_next('{')
     s += 1
     
     if "[COUNTRY]" in name:
-        while manual[s] != '!':
+        while codebook[s] != '!':
             i = int(parse_next(' '))
             val = parse_next('\n')
             col_legend[i] = val
         s += 1
+
+        Legends[name.replace("[COUNTRY]", "")] = OrdLeg(order, {})
         
-        while manual[s] != '}':
-            c = manual[s:s+3]
+        while codebook[s] != '}':
+            c = codebook[s:s+3]
             s += 5
             
-            while manual[s] != '}':
+            while codebook[s] != '}':
                 i = int(parse_next(' '))
                 val = parse_next('\n')
                 col_legend[i] = val
             s += 2
-            
-            legends[name.replace("[COUNTRY]", c)] = ord_leg(order, col_legend)
+
+            Legends[name.replace("[COUNTRY]", c)] = OrdLeg(order, col_legend)
+        s += 2
             
     else:
-        while manual[s] != '}':
+        while codebook[s] != '}':
             i = int(parse_next(' '))
             val = parse_next('\n')
             col_legend[i] = val
-        s += 1
+        s += 2
         
-        legends[name] = ord_leg(order, col_legend)
-
-#%% Parent_Cleaning
+        Legends[name] = OrdLeg(order, col_legend)
 
 #%% Restitching
-
-#%% Move QRID column to index
 parent_df.index = parent_df["QRID"]
 parent_df = parent_df.drop("QRID", axis = 1)
 
-#%% Fix respose layout for Q9
-
-Q9_cols = parent_df.columns.map(lambda x: x[1] == '9')
+Q9_cols = parent_df.columns.map(lambda x: x[1] == "9")
 Q9_cols = parent_df.iloc[:, Q9_cols]
 
 def get_Q9(row: pd.Series):
@@ -101,18 +112,15 @@ def get_Q9(row: pd.Series):
     else:
         return int(i[0][3])
 
-Q9 = Q9_cols.apply(get_Q9, axis = 1)
-parent_df.insert(16, "Q9", Q9)
+parent_df.insert(16, "Q9", Q9_cols.apply(get_Q9, axis = 1))
 parent_df = parent_df.drop(Q9_cols, axis = 1)
-    
-#%% Removing QS1... variables becuase they stand for regions and are indecipherable or redacted
-# Removing qbornmoverec variable because values are incomprehensible or redacted
 
 QS1_cols = [i for i in parent_df.columns if i.lower()[:3] == "qs1"]
 parent_df = parent_df.drop(QS1_cols, axis = 1)
 parent_df = parent_df.drop("qbornmoverec", axis = 1)
-    
-#%% Repair column naming scheme
+
+parent_df["QIDEOLOGY"] = parent_df["QIDEOLOGY"].fillna(parent_df["QIDEOLOGYa"]).fillna(parent_df["QIDEOLOGYb"])
+parent_df = parent_df.drop(["QIDEOLOGYa", "QIDEOLOGYb"], axis = 1)
 
 def title_scheme(title: str):
     # Cumulatively adjusts column titles according to scheme described below
@@ -136,9 +144,9 @@ def title_scheme(title: str):
     # Capitalize suffixes signifying country
     # "QDenomaut" -> "QDenomAUT"
     
-    if new_title[-3:].upper() in legends["Country"].leg():
+    if new_title[-3:].upper() in Legends["Country"].values():
         new_title = new_title[:-3] + new_title[-3:].upper()
-    if new_title[-4:-1].upper() in legends["Country"].leg():
+    if new_title[-4:-1].upper() in Legends["Country"].values():
         new_title = new_title[:-4] + new_title[-4:-1].upper() + new_title[-1]
 
     # Some questions are divided into cases a, b, c, etcetera
@@ -162,7 +170,9 @@ def title_scheme(title: str):
 
     rename_key = {"QCitizen1" : "QCitizen",
                   "QBornc" : "QBornmthr",
-                  "QBorne" : "QBornfthr"}
+                  "QBorne" : "QBornfthr",
+                  "QChilda" : "QChild",
+                  "QHhch" : "QParent"}
 
     if new_title in rename_key.keys():
         new_title = rename_key[new_title]
@@ -170,3 +180,57 @@ def title_scheme(title: str):
     return new_title
 
 parent_df = parent_df.rename(title_scheme, axis = 1)
+
+#%% Further Preparations
+
+def cardinality(title: str):
+    if title in Legends:
+        return Legends[title].ord()
+        
+    if title[-2] == '_':
+        return Legends[title[:-1]].ord()
+
+    raise NotImplementedError(f"Column {title} inappropriately named")
+    
+def Cardinate(df: pd.DataFrame, cardinality_arg: str):
+    return df.loc[:, df.apply(lambda x: cardinality(x.name)) == cardinality_arg]
+
+def strip_countries(title: str):
+    # Code primary lifted from title_scheme function
+    if title[-3:] in Legends["Country"].values():
+        return title[:-3]
+    if title[-5:-2] in Legends["Country"].values():
+        return title[:-5] + title[-2:]
+
+    return title
+        
+survey_order = parent_df.apply(lambda x: strip_countries(x.name)).drop_duplicates().__array__()
+
+def disambiguate(col: pd.Series):
+    if col.dtypes == int:
+        return col.map(lambda x: Legends[col.name][x])
+    else:
+        return col
+
+def ambiguate(col: pd.Series):
+    if col.dtypes == int:
+        return col
+    else:
+        reverse_legend = {y:x for x,y in Legends[col.name].items()}
+        return col.map(lambda x: reverse_legend[x])
+    
+def Nationate(df: pd.DataFrame):
+    country_dfs = {}
+    if "Country" not in df:
+        df = df.join(parent_df["Country"], how = "left")
+    df["Country"] = disambiguate(df["Country"])
+
+    for c in df["Country"].unique():
+        country_df = df.copy()
+        country_df = country_df.loc[country_df["Country"] == c]
+        country_df = country_df.loc[:, country_df.apply(lambda x: any(x.notna()))]
+        country_df = country_df.rename(strip_countries, axis = 1)
+        country_dfs[c] = country_df.drop("Country", axis = 1)
+        
+    return country_dfs
+
