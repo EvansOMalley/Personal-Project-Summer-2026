@@ -49,7 +49,7 @@ Q7:Categorical{
 2 Government policies should support religious values and beliefs
 }
 Q8:Categorical{
-1 The teachings of some realigions promote violence
+1 The teachings of some religions promote violence
 2 Some violent people use religion to justify their actions
 }
 Q9:Categorical{
@@ -1007,13 +1007,14 @@ QInck[COUNTRY]:Ordinal{
 }
 }
 QIdeology:Ordinal{
-1 Leftmost
+1 Extreme left
 2 Left
-3 Center left
-4 Center
+3 Mostly left
+4 Center left
 5 Center right
-5 Right
-6 Rightmost
+5 Mostly right
+6 Right
+7 Extreme right
 }
 QPtypotvot[COUNTRY]:Categorical{
 !AUT{
