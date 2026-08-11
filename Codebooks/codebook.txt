@@ -120,7 +120,7 @@ QDenom:Categorical{
 93 Protestant
 94 Just Christian
 }
-Q15_:Ordinal{
+Q15:Ordinal{
 1 More than once a week
 2 Once a week
 3 Once or twice a month
