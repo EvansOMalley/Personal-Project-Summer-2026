@@ -98,11 +98,6 @@ QCurrel:Categorical{
 91 Another relgion
 92 Nothing in particular
 }
-QCurreld:Categorical{
-1 Christian
-2 Muslim
-3 Neither
-}
 QDenom:Categorical{
 1 Orthodox
 2 Catholic
