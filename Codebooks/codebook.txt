@@ -140,7 +140,7 @@ Q19_:Categorical{
 Q20_:Ordinal{
 1 Completely agree
 2 Mostly agree
-3 Most disagree
+3 Mostly disagree
 4 Completely disagree
 }
 QChrel:Categorical{
